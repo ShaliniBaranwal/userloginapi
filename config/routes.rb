@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   root "application#landing"
   resources :account
   resources :login
+  resources :logout
 end
