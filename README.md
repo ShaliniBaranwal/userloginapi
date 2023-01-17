@@ -1,24 +1,15 @@
-# README
+# User Management System API (Ruby on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Requests that can be sent**:
 
-Things you may want to cover:
+### INFORMATION ABOUT YOUR ACCOUNT
+* **GET** request at `/account/{id}` finds an account with `id`, and displays it.
+* **POST** request at `/account` creates a new account with specified arguments.
+* **PUT** request at `/account/{id}` finds the account with the `id` and updates it with specified arguments.
+* **DELETE** request at `/account/{id}` finds the account with the `id` and deletes it.
 
-* Ruby version
+### LOGIN PAGE
+* **GET** request at `/login` finds an account and logs in based on arguments passed.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### LOGOUT PAGE
+* **GET** request at `/logout` logs out of the current account.
